@@ -5,22 +5,32 @@ import java.util.Scanner;
 
 public class Factorial {
     static void main() {
-        try{
+        try {
             Scanner sc = new Scanner(System.in);
             System.out.println("Enter any number : ");
             int n = sc.nextInt();
-            System.out.println(n+"! = "+factorial(n));
-        } catch (InputMismatchException e){
-            System.out.println("Enter Valid Number");
+            if (n < 0) throw new IllegalArgumentException();
+            System.out.println(n + "! = " + factorial(n));
+            //using Recursion
+            System.out.println("Using Recursion : " + n + "! = " + factorialRecursion(n));
+        } catch (InputMismatchException | IllegalArgumentException e) {
+            System.out.println("Enter Non Negative Number");
         }
     }
 
     private static int factorial(int n) {
         int fact = 1;
-        while (n>0){
+        while (n > 0) {
             fact *= n;
             n--;
         }
         return fact;
+    }
+
+    private static int factorialRecursion(int n) {
+        if (n == 0) {
+            return 1;
+        }
+        return n * factorialRecursion(n - 1);
     }
 }

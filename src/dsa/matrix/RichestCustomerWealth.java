@@ -1,4 +1,4 @@
-package dsa.arrays;
+package dsa.matrix;
 
 public class RichestCustomerWealth {
 

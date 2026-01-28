@@ -72,6 +72,7 @@ public class PalindromeLinkedList {
                                 new ListNode(3)));
 
         System.out.println(isPalindrome(head1));
+
         System.out.println(isPalindrome(head2));
     }
 }

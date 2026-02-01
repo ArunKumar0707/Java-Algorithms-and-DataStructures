@@ -10,6 +10,7 @@ public class AddDigits {
     public static void main(String[] args) {
         System.out.println(addDigits(38)); // 2
         System.out.println(addDigits(0));  // 0
+        System.out.println(addDigits(56));  // 0
     }
 }
 

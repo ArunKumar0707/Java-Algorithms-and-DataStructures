@@ -18,6 +18,7 @@ public class HappyNumber {
     public static void main(String[] args) {
         System.out.println(isHappy(19)); // true
         System.out.println(isHappy(2));  // false
+        System.out.println(isHappy(3));  // false
     }
 }
 
